@@ -1,0 +1,22 @@
+[project]
+name = "tensor"
+version = "0.1.0"
+description = "A minimal deep learning library with CUDA backend"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pybind11>=2.11",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[build-system]
+requires = [
+    "setuptools>=61.0",
+    "pybind11>=2.11",
+    "ninja",
+]
+build-backend = "setuptools.build_meta"
